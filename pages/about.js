@@ -1,17 +1,16 @@
 import Head from "next/head";
-import Link from "next/link";
-import styles from "../styles/Home.module.css";
+import React from "react";
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>
-        <title>Ninja List | Home</title>
+        <title>Ninja List | About</title>
         <meta name="keywords" content="ninjas" />
       </Head>
       <div>
-        <h1 className={styles.title}>Homepage</h1>
-        <p className={styles.text}>
+        <h1>About</h1>
+        <p>
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of
@@ -22,7 +21,7 @@ export default function Home() {
           infancy. Various versions have evolved over the years, sometimes by
           accident, sometimes on purpose (injected humour and the like).
         </p>
-        <p className={styles.text}>
+        <p>
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of
@@ -33,9 +32,6 @@ export default function Home() {
           infancy. Various versions have evolved over the years, sometimes by
           accident, sometimes on purpose (injected humour and the like).
         </p>
-        <Link href="/ninjas">
-          <a className={styles.btn}>See ninja listing</a>
-        </Link>
       </div>
     </>
   );
